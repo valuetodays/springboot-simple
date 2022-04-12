@@ -17,7 +17,10 @@ public class IndexController {
 
     @GetMapping("/")
     public String hostName() throws UnknownHostException {
-        return InetAddress.getLocalHost().getHostName();
+        int a = 111;
+        int b = 222;
+        int c = a + b;
+        return InetAddress.getLocalHost().getHostName() + "/" + (c);
     }
 }
 
